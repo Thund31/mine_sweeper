@@ -1,0 +1,11 @@
+C:\Programming\gitHub\mine_sweeper\MineSweeper\bin\Debug\MineSweeper.exe.config
+C:\Programming\gitHub\mine_sweeper\MineSweeper\bin\Debug\MineSweeper.exe
+C:\Programming\gitHub\mine_sweeper\MineSweeper\bin\Debug\MineSweeper.pdb
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.csprojAssemblyReference.cache
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.Properties.Resources.resources
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.StartPage.resources
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.csproj.GenerateResource.cache
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.exe
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.pdb
+C:\Programming\gitHub\mine_sweeper\MineSweeper\obj\Debug\MineSweeper.GamePage.resources
