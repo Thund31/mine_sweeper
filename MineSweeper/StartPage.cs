@@ -15,7 +15,8 @@ namespace MineSweeper
         public static Form FormStart;
 
         public decimal minePercentage = 10;
-        public static int currentLanguage = 0, currentDifficulty = 8, currentMapSize = 10, currentNumMines = 10;
+        public static int currentLanguage = 0, currentDifficulty = 8, currentMapSize = 10, currentNumMines = 10, gamesPlayed = 0, gamesWon = 0;
+        public static bool isDifficult = false;
         public String[,] text = new string[,]{
             {"中文", "Mine Sweeper", "Map Size", "# of Mines", "Start", "enter an integer", "map is too large", "map is too small", "Easy", "Normal", "Hard", "Legendary", "Impossible", "Invalid"},
             {"English", "扫雷", "地图大小", "地雷数量", "开始游戏", "输入一个整数", "地图过大", "地图过小", "简单", "正常", "困难", "传奇", "神仙", "输入错误"}
@@ -102,11 +103,31 @@ namespace MineSweeper
                     currentNumMines = numMinesValue;
                     minePercentage = (decimal)currentNumMines * 100 / currentMapSize / currentMapSize;
 
-                    if (minePercentage < 20) currentDifficulty = 8;
-                    else if (minePercentage < 40) currentDifficulty = 9;
-                    else if (minePercentage < 60) currentDifficulty = 10;
-                    else if (minePercentage < 80) currentDifficulty = 11;
-                    else currentDifficulty = 12;
+                    if (minePercentage < 20)
+                    {
+                        currentDifficulty = 8;
+                        isDifficult = false;
+                    }
+                    else if (minePercentage < 40)
+                    {
+                        currentDifficulty = 9;
+                        isDifficult = false;
+                    }
+                    else if (minePercentage < 60)
+                    {
+                        currentDifficulty = 10;
+                        isDifficult = true;
+                    }
+                    else if (minePercentage < 80)
+                    {
+                        currentDifficulty = 11;
+                        isDifficult = true;
+                    }
+                    else
+                    {
+                        currentDifficulty = 12;
+                        isDifficult = true;
+                    }
                 }
             } catch
             {
@@ -116,5 +137,6 @@ namespace MineSweeper
 
             lblDifficulty.Text = text[currentLanguage, currentDifficulty];
         }
+
     }
 }
